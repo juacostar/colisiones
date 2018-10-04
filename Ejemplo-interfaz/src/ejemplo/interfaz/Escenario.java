@@ -24,9 +24,9 @@ public class Escenario extends Application {
     @Override
     public void start(Stage stage) throws Exception {
        Pane layout= new Pane();
-       Canvas canvas= new Canvas(300,300);
+       Canvas canvas= new Canvas(512,512);
        layout.getChildren().add(canvas);
-       Scene escena= new Scene(layout,300,300, Color.WHITESMOKE);
+       Scene escena= new Scene(layout,512,512, Color.WHITESMOKE);
        
         GraphicsContext lapiz = canvas.getGraphicsContext2D();
         LoopJuego juego= new LoopJuego(lapiz);
